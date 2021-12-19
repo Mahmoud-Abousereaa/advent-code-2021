@@ -13,7 +13,7 @@ fn main() {
 }
 
 fn get_large_measurments() -> Result<i32, Box<dyn Error>> {
-  let file = File::open("measurements.txt")?;
+  let file = File::open("../measurements.txt")?;
   let reader = BufReader::new(file);
   let mut count = 0;
   let mut prev_measurement: Option<i32> = None;
